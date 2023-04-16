@@ -39,7 +39,7 @@ contract TokenFarm is Ownable {
 
     function setPriceFeedContract(
         address _token,
-        address _priceFeedz
+        address _priceFeed
     ) public onlyOwner {
         tokenPriceFeedMapping[_token] = _priceFeed;
     }
@@ -190,3 +190,14 @@ contract TokenFarm is Ownable {
         return false;
     }
 }
+// This is a smart contract i wrote for staking crypto. stores address to amount staked in a mapping ...
+// amongst other things, it also rewards staked users with the native platform token in correspondance with how much was staked. I hope you like it
+// lets deploy on VM and check out the public functions
+
+// We need an the native token address to deploy it. I create a fake wallet for this. just a minute:)
+// now let us deploy
+
+// admin can add the tokens that is acceptable on the platform with the first public function
+// admin can issue the reward tokens with the second function
+// admin can renounce ownership
+
